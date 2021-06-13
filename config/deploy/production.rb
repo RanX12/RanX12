@@ -3,7 +3,7 @@
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
 
-server "ranxiao.vip", user: "ruby", roles: %w{app db web}
+server "47.100.207.235", user: "ruby", roles: %w{app db web}
 
 
 

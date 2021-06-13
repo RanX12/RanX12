@@ -2,7 +2,7 @@
 lock "~> 3.16.0"
 
 set :application, 'ranx12'
-set :repo_url, 'git@github.com:dao42/d42pad_rails.git'
+set :repo_url, 'git@github.com:RanX12/ranx12.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
