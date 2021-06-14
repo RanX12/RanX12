@@ -8,15 +8,6 @@ GIT
       i18n
 
 GIT
-  remote: https://github.com/dao42/clockwork.git
-  revision: cc223d68bf61c63747b41617713d63f8d6201ee5
-  branch: add_logfilename
-  specs:
-    clockwork (2.0.3)
-      activesupport
-      tzinfo
-
-GIT
   remote: https://github.com/dao42/lograge.git
   revision: c120858f418c2838d5f6ed2f332509418320377c
   specs:
@@ -34,15 +25,8 @@ GIT
     redis-objects (1.5.0)
       redis (~> 4.0)
 
-GIT
-  remote: https://github.com/saberma/china_sms.git
-  revision: f9696928635b6996331587faa33d3febbfd4cf11
-  branch: master
-  specs:
-    china_sms (0.0.7)
-
 GEM
-  remote: https://gems.ruby-china.com/
+  remote: https://rubygems.org/
   specs:
     actioncable (6.0.3.7)
       actionpack (= 6.0.3.7)
@@ -368,9 +352,6 @@ GEM
       net-ssh (>= 2.6.5, < 7.0.0)
     net-ssh (6.1.0)
     netrc (0.11.0)
-    nilify_blanks (1.4.0)
-      activerecord (>= 4.0.0)
-      activesupport (>= 4.0.0)
     nio4r (2.5.7)
     nokogiri (1.11.7)
       mini_portile2 (~> 2.5.0)
@@ -684,8 +665,6 @@ DEPENDENCIES
   carrierwave-i18n
   carrierwave-upyun (~> 0.2.2)
   chartkick (>= 3.3.0)
-  china_sms!
-  clockwork!
   connection_pool
   counter_culture (~> 2.0)
   daemons
@@ -711,11 +690,10 @@ DEPENDENCIES
   lograge!
   logstash-event
   meta-tags
-  nilify_blanks
   omniauth-github (~> 2.0.0)
   omniauth-rails_csrf_protection (~> 1.0.0)
   ot
-  pg (= 1.1)
+  pg
   process-metrics
   pry-byebug
   pry-rails
@@ -730,7 +708,6 @@ DEPENDENCIES
   redcarpet (>= 3.5)
   redis-objects!
   rest-client
-  rexml (~> 3.2.5)
   rouge
   rqrcode
   rspec-rails
