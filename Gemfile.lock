@@ -384,7 +384,7 @@ GEM
     parser (3.0.1.1)
       ast (~> 2.4.1)
     path_expander (1.1.0)
-    pg (1.1.0)
+    pg (1.2.3)
     process-metrics (0.2.1)
       console (~> 1.8)
       samovar (~> 2.1)
