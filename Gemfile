@@ -1,4 +1,4 @@
-source 'https://gems.ruby-china.com'
+source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
@@ -27,8 +27,7 @@ gem 'enumerize'
 gem 'file_validators'
 gem 'groupdate'
 gem 'hiredis'
-gem 'nilify_blanks'
-gem 'pg', '1.1'
+gem 'pg'
 gem 'rambling-trie'
 gem 'redis-objects', github: 'nateware/redis-objects', ref: '2100417'
 
@@ -37,22 +36,15 @@ gem 'doorkeeper'
 gem 'omniauth-github', '~> 2.0.0'
 gem 'omniauth-rails_csrf_protection', '~> 1.0.0'
 
-# Background job scheduler
-gem 'clockwork', github: 'dao42/clockwork', branch: 'add_logfilename', require: false
-
 # HTTP client
 gem 'socksify'
 gem 'rest-client'
 
 # integrate WeChat Official Accounts Platform or Wechat mini program easily
 gem 'wechat', '~> 0.12.1'
-gem 'rexml', '~> 3.2.5'
 
 # Payment
 gem 'rqrcode'
-
-# China SMS client
-gem 'china_sms', github: 'saberma/china_sms', branch: 'master'
 
 # File uploader
 gem 'carrierwave', '~> 1.3.2'
