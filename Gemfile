@@ -36,6 +36,12 @@ gem 'doorkeeper'
 gem 'omniauth-github', '~> 2.0.0'
 gem 'omniauth-rails_csrf_protection', '~> 1.0.0'
 
+# Background job
+gem 'sidekiq'
+gem 'sidekiq-status'
+gem 'sidekiq-throttled'
+gem 'sidekiq-unique-jobs'
+
 # HTTP client
 gem 'socksify'
 gem 'rest-client'

@@ -138,6 +138,9 @@ GEM
       browser (>= 4.0, < 5)
       rails (>= 5.0, < 7)
       sass-rails
+    brpoplpush-redis_script (0.1.2)
+      concurrent-ruby (~> 1.0, >= 1.0.5)
+      redis (>= 1.0, <= 5.0)
     builder (3.2.4)
     bulk_insert (1.9.0)
       activerecord (>= 3.2.0)
@@ -183,6 +186,8 @@ GEM
       carrierwave (>= 0.5.7)
       faraday (>= 0.8.0)
     chartkick (4.0.4)
+    chronic_duration (0.10.6)
+      numerizer (~> 0.1.1)
     chunky_png (1.4.0)
     coderay (1.1.3)
     coercible (1.0.0)
@@ -359,6 +364,7 @@ GEM
     notiffany (0.1.3)
       nenv (~> 0.1)
       shellany (~> 0.0)
+    numerizer (0.1.1)
     oauth2 (1.4.7)
       faraday (>= 0.8, < 2.0)
       jwt (>= 1.0, < 3.0)
@@ -455,6 +461,7 @@ GEM
       optimist (>= 3.0.0)
     redcarpet (3.5.1)
     redis (4.3.1)
+    redis-prescription (1.0.0)
     reek (6.0.4)
       kwalify (~> 0.7.0)
       parser (~> 3.0.0)
@@ -549,6 +556,18 @@ GEM
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
       redis (>= 4.2.0)
+    sidekiq-status (1.1.4)
+      chronic_duration
+      sidekiq (>= 3.0)
+    sidekiq-throttled (0.13.0)
+      concurrent-ruby
+      redis-prescription
+      sidekiq
+    sidekiq-unique-jobs (7.0.12)
+      brpoplpush-redis_script (> 0.1.1, <= 2.0.0)
+      concurrent-ruby (~> 1.0, >= 1.0.5)
+      sidekiq (>= 5.0, < 7.0)
+      thor (>= 0.20, < 2.0)
     simple_form (5.1.0)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
@@ -717,6 +736,10 @@ DEPENDENCIES
   safe_target_blank
   sass-rails (>= 6.0.0)
   shoulda-matchers
+  sidekiq
+  sidekiq-status
+  sidekiq-throttled
+  sidekiq-unique-jobs
   simple_form (~> 5.0)
   simplecov
   sitemap_generator
