@@ -31,11 +31,6 @@ gem 'pg'
 gem 'rambling-trie'
 gem 'redis-objects', github: 'nateware/redis-objects', ref: '2100417'
 
-# Authorization
-gem 'doorkeeper'
-gem 'omniauth-github', '~> 2.0.0'
-gem 'omniauth-rails_csrf_protection', '~> 1.0.0'
-
 # Background job
 gem 'sidekiq'
 gem 'sidekiq-status'
@@ -45,9 +40,6 @@ gem 'sidekiq-unique-jobs'
 # HTTP client
 gem 'socksify'
 gem 'rest-client'
-
-# integrate WeChat Official Accounts Platform or Wechat mini program easily
-gem 'wechat', '~> 0.12.1'
 
 # Payment
 gem 'rqrcode'
