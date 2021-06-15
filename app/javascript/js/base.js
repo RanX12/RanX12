@@ -3,9 +3,8 @@ import 'core-js/stable'
 import 'regenerator-runtime/runtime'
 
 // base dependency library - jQuery & Bootstrap
-import 'jquery'
+import $ from 'jquery'
 import 'bootstrap/dist/js/bootstrap'
-import '@adactive/bootstrap-tagsinput/dist/bootstrap-tagsinput'
 
 // base dependency library - Rails, misc
 import * as Sentry from "@sentry/browser";

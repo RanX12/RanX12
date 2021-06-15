@@ -15,6 +15,7 @@ html
     = content_for?(:head) ? yield(:head) : ''
     = stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    / <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     / = favicon_link_tag "favicon.ico"
 
   body.front_end
