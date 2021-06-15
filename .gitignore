@@ -34,7 +34,8 @@
 #/config/master.key
 #/config/application.yml
 #/config/database.yml
-#/config/secrets.yml
+/config/secrets.yml
+/config/puma.rb
 
 /public/packs
 /public/packs-test
