@@ -87,6 +87,8 @@ gem 'figaro'
 gem 'lograge', github: 'dao42/lograge'
 gem 'logstash-event'
 
+gem 'uglifier', '>= 1.3.0'
+
 # APM agent
 # gem 'elastic-apm'
 
