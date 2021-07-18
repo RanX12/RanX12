@@ -1,5 +1,5 @@
 # Use `rake secret` to generate one key
-SECRET_KEY_BASE: ''
+SECRET_KEY_BASE: 'e964026893fc1378a4bd3c6b9614a39933090e83deeb6dcba87200031b6a6544b0b646e397cc0685cc43661310a4dedb00bf493de8f060719cff5341b8f5f648'
 
 # domain name used by action cable
 DOMAIN: 'ranxiao.vip'

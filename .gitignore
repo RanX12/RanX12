@@ -32,7 +32,7 @@
 
 # Ignore master key for decrypting credentials and more.
 config/master.key
-config/application.yml
+# config/application.yml
 config/database.yml
 config/secrets.yml
 config/puma.rb
