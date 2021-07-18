@@ -31,11 +31,11 @@
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
-#/config/master.key
-#/config/application.yml
-#/config/database.yml
-/config/secrets.yml
-/config/puma.rb
+config/master.key
+config/application.yml
+config/database.yml
+config/secrets.yml
+config/puma.rb
 
 /public/packs
 /public/packs-test
