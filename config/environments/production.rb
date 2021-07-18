@@ -80,9 +80,11 @@ Rails.application.configure do
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
-  logger           = ActiveSupport::Logger.new(STDOUT)
-  logger.formatter = config.log_formatter
-  config.logger = ActiveSupport::TaggedLogging.new(logger)
+  # logger           = ActiveSupport::Logger.new(STDOUT)
+  # logger.formatter = config.log_formatter
+  # config.logger = ActiveSupport::TaggedLogging.new(logger)
+
+  config.logger = Logger.new (Rails.root.join ("log/production.log"))
 
   if ENV['EXCEPTION_SLACK_WEBHOOK'].present?
     config.middleware.use ExceptionNotification::Rack,
