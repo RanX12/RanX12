@@ -34,6 +34,7 @@ require 'capistrano/sidekiq'
 # Plugin: capistrano/puma
 require 'capistrano/puma'
 install_plugin Capistrano::Puma
+install_plugin Capistrano::Puma::Systemd
 install_plugin Capistrano::Puma::Workers
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
